@@ -1,10 +1,10 @@
 class CreateProducts < ActiveRecord::Migration
   def change
     create_table :products do |t|
-      t.string :title required
-      t.text :description required
-      t.decimal :price required
-      t.integer :stock_quantity required
+      t.string :title 
+      t.text :description require
+      t.decimal :price require
+      t.integer :stock_quantity require
 
       t.timestamps
     end
